@@ -1,0 +1,38 @@
+.item1{
+    grid-area: header;
+    background-color: rgba(224, 67, 19, 0.8);
+}
+
+.item2{
+    grid-area: right;
+    background-color: rgba(223, 202, 18, 0.8);
+}
+
+.item3{
+    grid-area: menu;
+    background-color: rgba(71, 211, 16, 0.8);
+}
+
+.item4{
+    grid-area: main;
+    background-color: rgba(79, 233, 233, 0.8);
+}
+
+.item5{
+    grid-area: footer;
+    background-color: rgba(79, 233, 233, 0.8);
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      'header header header right right'
+      'header header header right right'
+      'menu menu main main main'
+      'menu menu footer footer footer';
+    gap: 10px;
+    background-color: #162b3b;
+    padding: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
